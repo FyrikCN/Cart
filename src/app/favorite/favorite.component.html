@@ -1,0 +1,14 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+<p>favorite works!</p>
+<!--
+<span class="{{ isFavorite? 'glyphicon glyphicon-star' : 'glyphicon glyphicon-star-empty'}}"
+      (click) = "onClick()">
+-->
+<span class="glyphicon"
+      [ngClass] = "{
+            'glyphicon-star': isFavorite,
+            'glyphicon-star-empty': !isFavorite
+      }"
+      (click) = "onClick()">
+</span>
+<ng-content></ng-content>

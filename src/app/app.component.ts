@@ -1,3 +1,4 @@
+import { FavoriteChangedEventArgs } from './favorite/favorite.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngreview';
+  isFavorite = false;
+  hasCourse = false;
+  viewMode = "first";
+
+  onChanged(obj: FavoriteChangedEventArgs) {
+    console.log("favorate has been changed to: " + obj.isFavorite);
+  }
 }

@@ -1,0 +1,80 @@
+.topBar {
+    background-color: #F6F6F7;
+    height: 2rem;
+    width: 90rem;
+    display: flex;
+    align-content: center;
+}
+
+#myCartButton {
+    color: #888888;
+    position: absolute;
+    right: 10rem;
+    display: inline;
+    margin: auto;
+    text-align: center;
+}
+
+#myCartButton:hover {
+    cursor: pointer;
+}
+
+.itemDetails {
+    margin-top: 2rem;
+    align-content: center;
+    position: absolute;
+    left: 10rem;
+    right: 10rem;
+}
+
+.itemImage, .itemInfo {
+    float: left;
+    width: 50%;
+}
+
+.required::after {
+    content:"*";
+    color: #C90000;
+}
+
+.itemSize {
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    border: 1px solid #CCCCCC;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.itemSizeSelected {
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    border: 1px solid #222222;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.itemSize:hover {
+    cursor: pointer;
+}
+
+.addToCart {
+    width: 10rem;
+    height: 2rem;
+    line-height: 2rem;
+    border: 1px solid #222222;
+    margin-top: 3rem;
+    margin-right: 0.5rem;
+    text-align: center;
+}
+
+.addToCart:hover {
+    cursor: pointer;
+}

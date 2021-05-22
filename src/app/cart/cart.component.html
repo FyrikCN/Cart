@@ -1,0 +1,21 @@
+<!-- <p>cart works!</p> -->
+<div class="topBar">
+    <div id="myCartButton">My Cart( {{ cartCount }} )</div>
+</div>
+<div class="itemDetails">
+    <div class="itemImage">
+        <img [src]= "imageSource" alt="The image was failed to be loaded.">
+    </div>
+    <div class="itemInfo">
+        <h5>{{ item.Name }}</h5>
+        <div>${{ item.Price }}</div>
+        <div>{{ item.Description }}</div>
+        <div class="required">SIZE {{ item.SelectedSize }}</div>
+        <div (click)="onClick($event)">
+            <div class="itemSize">S</div>
+            <div class="itemSize">M</div>
+            <div class="itemSize">L</div>
+        </div>
+        <div class="addToCart">ADD TO CART</div>
+    </div>
+</div>
